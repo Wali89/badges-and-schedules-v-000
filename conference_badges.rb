@@ -10,7 +10,8 @@ end
 
 
 def assign_rooms(array)
-  array.each_with_index do |speaker, room|
+  array. map do |speaker|
+    speaker.each_with_index do |speaker, room| 
     "Hello, #{speaker}! You'll be assigned to room #{room + 1}"
   end
 end
